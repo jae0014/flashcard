@@ -1,0 +1,4 @@
+<resources>
+    <string name="id">ID: </string>
+    <string name="pass">Password: </string>
+</resources>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/form_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/textarea">
+
+
+            <LinearLayout
+                android:id="@+id/nick_layout"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/label_corner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/nick_label"
+                    android:layout_width="100dp"
+
+                    android:layout_height="30dp"
+                    android:text="닉네임"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/nick_name"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner"
+                    android:ems="10"
+                    android:inputType="textPostalAddress"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pass2layout"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/label_corner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pass1layout">
+
+                <TextView
+                    android:id="@+id/pass2label"
+                    android:layout_width="100dp"
+
+                    android:layout_height="30dp"
+                    android:text="비밀번호 확인"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/pass2"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/label_corner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nick_layout">
+
+                <TextView
+                    android:id="@+id/nameLabel"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:text="이름"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ID_Layout"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="32dp"
+
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameLayout">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/label_corner"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/user_ID_label"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="아이디"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light" />
+
+                    <EditText
+                        android:id="@+id/user_id"
+                        android:layout_width="168dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_corner"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/user_id_button"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_corner"
+                    android:text="중복 확인"
+                    android:textColor="@color/textBackcolor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/pass1layout"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/label_corner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ID_Layout">
+
+                <TextView
+                    android:id="@+id/passlabel"
+                    android:layout_width="100dp"
+
+                    android:layout_height="30dp"
+                    android:text="비밀번호"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/pass1"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/birthday_layout"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/label_corner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pass2layout">
+
+                <TextView
+                    android:id="@+id/birthday_label"
+                    android:layout_width="100dp"
+
+                    android:layout_height="30dp"
+                    android:text="생년월일"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/birthday"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/email_layout"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/label_corner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/birthday_layout">
+
+                <TextView
+                    android:id="@+id/email_label"
+                    android:layout_width="100dp"
+
+                    android:layout_height="30dp"
+                    android:text="E-Mail"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/address_layout"
+                android:layout_width="348dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/label_corner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_layout">
+
+                <TextView
+                    android:id="@+id/address_label"
+                    android:layout_width="100dp"
+
+                    android:layout_height="30dp"
+                    android:text="주소"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner"
+                    android:ems="10"
+                    android:inputType="textPostalAddress"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/intro_layout"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/label_corner"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_layout">
+
+                <TextView
+                    android:id="@+id/intro_label"
+                    android:layout_width="100dp"
+
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="자기소개"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light" />
+
+                <EditText
+                    android:id="@+id/intro"
+                    android:layout_width="146dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_corner"
+
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:singleLine="false"
+
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/new_member"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/button_corner"
+                android:text="작성 완료"
+                android:textColor="@color/textBackcolor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intro_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
